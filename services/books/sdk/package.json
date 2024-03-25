@@ -15,8 +15,8 @@
     "@acme/helper-env": "^0.1.0",
     "@acme/http-api-client": "^0.1.0",
     "dom-parser": "^1.1.5",
-    "zod": "3.21.4",
-    "xmldom-qsa": "1.1.3"
+    "xmldom-qsa": "1.1.3",
+    "zod": "3.21.4"
   },
   "scripts": {
     "build": "esbuild ./index.ts --bundle --platform=node --outfile=dist/index.js",
