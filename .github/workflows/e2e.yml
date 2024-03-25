@@ -1,0 +1,65 @@
+## Version 1.0.0
+name: e2e
+
+on:
+  workflow_call:
+    inputs:
+      deploy_env:
+        description: "Target deployment environment"
+        required: true
+        type: string
+      infra_env:
+        type: string
+        description: "Target infra environment"
+        required: true
+
+  workflow_dispatch:
+    inputs:
+      deploy_env:
+        type: choice
+        description: "Target deployment environment"
+        required: true
+        options:
+          - dev
+          - stage
+          - prod
+      infra_env:
+        type: string
+        description: "Target infra environment"
+        required: true
+        options:
+          - local
+          - remote
+
+env:
+  SYSTEM_NAME: demo-book-api
+
+jobs:
+  test:
+    environment: ${{ inputs.deploy_env || github.event.inputs.deploy_env }}
+    env:
+      DEPLOY_ENV: ${{ inputs.deploy_env || github.event.inputs.deploy_env }}
+    timeout-minutes: 20
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.38.0-jammy
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ inputs.deploy_env || github.event.inputs.deploy_env }}
+
+      - name: PNPM init
+        uses: ./.github/workflows/actions/pnpm_init
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Playwright tests
+        run: npx playwright test
+
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
