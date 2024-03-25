@@ -67,6 +67,8 @@ export class GoogleApiBookParserJSON
       GoogleApiBookSearchResponseSchemaJSON.safeParse(responseJson);
 
     if (!responseParsed.success) {
+      console.error("responseParsed.error", responseParsed.error);
+      console.error("responseJson", responseJson);
       throw new Error(
         `GoogleApiBookParserJSON.parseResponse(): Invalid response JSON`,
       );
