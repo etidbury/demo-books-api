@@ -1,0 +1,6 @@
+apps/**
+tooling/**
+packages/**
+util/**
+
+node_modules/**

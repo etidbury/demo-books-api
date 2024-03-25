@@ -1,0 +1,13 @@
+packages:
+  - apps/*
+  - apps/*/*
+  - packages/*
+  - packages/*/*
+  - tooling/*
+  - services/*/*/*/*
+  - services/*/*/*
+  - services/*/*
+  - services/*
+  - infra/*
+  - infra/*/*
+  - infra/*/*/*

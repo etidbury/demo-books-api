@@ -1,0 +1,98 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "globalDependencies": ["**/.env", "tsconfig.json"],
+  "pipeline": {
+    "shad": {
+      "cache": false
+    },
+    "gql:generate": {
+      "inputs": ["prisma/schema.prisma"],
+      "cache": false
+    },
+    "db:generate": {
+      "inputs": ["prisma/schema.prisma"],
+      "cache": false
+    },
+    "db:update": {
+      "cache": false
+    },
+    "db:studio": {
+      "cache": false
+    },
+    "dev": {
+      "dependsOn": ["^db:update", "^build:cjs-pkg"],
+      "persistent": true,
+      "cache": false
+    },
+    "build": {
+      "dependsOn": ["^build", "^db:generate"],
+      "outputs": [".next/**", ".expo/**", "dist/**"]
+    },
+    "build:cjs-pkg": {
+      "outputs": ["cjs/**"]
+    },
+    "cdk:bootstrap": {
+      "cache": false
+    },
+    "cdk:deploy": {
+      "cache": false
+    },
+    "start": {
+      "dependsOn": ["^build"]
+    },
+    "nest": {},
+    "format": {},
+    "format:fix": {},
+    "lint": {},
+    "lint:fix": {},
+    "clean": {
+      "cache": false
+    },
+    "//#clean": {
+      "cache": false
+    },
+    "type-check": {
+      "dependsOn": ["^db:generate"],
+      "cache": false
+    },
+    "test:unit": {
+      "cache": false
+    },
+    "test:unit:watch": {
+      "cache": false,
+      "persistent": true
+    },
+    "test:e2e": {
+      "cache": false,
+      "persistent": true
+    },
+    "test:e2e:watch": {
+      "persistent": true,
+      "cache": false
+    },
+    "storybook": {
+      "cache": true
+    }
+  },
+  "globalEnv": [
+    "CI",
+    "PORT",
+    "DATABASE_URL",
+    "EXPO_ROUTER_APP_ROOT",
+    "BASE_URL",
+    "NODE_ENV",
+    "SKIP_ENV_VALIDATION",
+    "VERCEL",
+    "VERCEL_URL",
+    "NOVU_API_KEY",
+    "SERVER_PORT",
+    "NEXT_PUBLIC_SUPABASE_URL",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+    "SUPABASE_SERVICE_KEY",
+    "NEXT_PUBLIC_ENV",
+    "NEXT_PUBLIC_PUB_SUB_CLIENT__PUBSUB_HOST",
+    "NEXT_PUBLIC_PUB_SUB_CLIENT__PUBSUB_USERNAME",
+    "NEXT_PUBLIC_PUB_SUB_CLIENT__PUBSUB_PASSWORD",
+    "WEBAUTHN__SESSION_SECRET"
+  ]
+}

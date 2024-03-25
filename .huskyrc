@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+source ~/.zshrc
+
+if test -f ".nvmrc"; then
+    nvm use
+fi

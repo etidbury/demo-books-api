@@ -1,0 +1,49 @@
+{
+  //"todohighlight.isCaseSensitive": false,
+  "todo-tree.general.tags": ["todo", "fixme", "NATIVECODEHERE"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.occurrencesHighlight": "multiFile",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }],
+  "eslint.workingDirectories": [
+    { "pattern": "apps/*/" },
+    { "pattern": "packages/*/" },
+    { "pattern": "tooling/*/" }
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "tailwindCSS.experimental.configFile": "./tooling/tailwind/index.ts",
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "testing.automaticallyOpenPeekView": "never",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  // "editor.quickSuggestionsDelay":500,
+  // "editor.hover.delay":500,
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "search.exclude": {
+    "**/dist/**": true,
+    "**/cjs/**": true,
+    "**/generated/**": true
+  },
+
+  "eslint.format.enable": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "javascript.autoClosingTags": false,
+  "typescript.autoClosingTags": false
+}

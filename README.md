@@ -1,12 +1,17 @@
-# Javascript Code Test
+## Prerequisites
 
-`BookSearchApiClient` is a simple class that makes a call to a http API to retrieve a list of books and return them.
+## TODO: complete Prerequisites section
 
-You need to refactor the `BookSearchApiClient` class, and demonstate in `example-client.js` how it would be used. Refactor to what you consider to be production ready code. You can change it in anyway you would like and can use javascript or typescript.
+```bash
+terraform --version ## Terraform v1.7.5
+```
 
-Things you will be asked about:
+To install/upgrade Terraform
 
-1. How could you easily add other book seller APIs in the the future
-2. How woud you manage differences in response payloads between differnt APIs without needing to make future changes to whatever code you have in example-client.js
-3. How would you implement different query types for example: by publisher, by year published etc
-4. How your code would be tested
+```bash
+brew tap hashicorp/tap
+brew install terraform
+
+##optional:
+brew upgrade hashicorp/tap/terraform
+```

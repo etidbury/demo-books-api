@@ -1,0 +1,15 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+## prevent commiting fix me tags
+
+## NOTE: this is super important because when modifying device simulator TS code, 
+## it generates fix me tags automatically on CPP files that require manual matching
+FORBIDDEN_RE="[Ff][Ii][Xx][Mm][Ee]"
+if [ $(git diff --cached -G "$FORBIDDEN_RE"|wc -l) != 0 ]; then
+    git --no-pager diff --cached -G "$FORBIDDEN_RE"
+    echo
+    echo "ERROR: You're trying to commit code containing a FIX ME tag. Please address and remove it before committing."
+    exit 1
+fi
+#cd "$(dirname "$0")/.." && pnpm run format && pnpm run lint
