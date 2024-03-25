@@ -94,7 +94,9 @@ help: ### Help with commands
 
 
 _check:
-	pnpm turbo build lint type-check test:unit
+	pnpm turbo build lint type-check
+	
+
 	make _tf_infra_cli cmd=validate infra_env=local
 	make _tf_infra_cli cmd=validate infra_env=remote
 
@@ -103,11 +105,9 @@ _check:
           CHECK_RESPONSE__EXPECT_STATUS_CODE="200" \
           bash ./util/check_response_wait_code.sh
 
-	# CHECK_RESPONSE__URL="http://localhost:8000/" \
-    #       CHECK_RESPONSE__EXPECT_STATUS_CODE="200" \
-    #       bash ./util/check_response_wait_code.sh
-
+	pnpm run test:unit
 	pnpm run test:e2e
+	
 
 
 ## NOTE: use this to use locally installed terraform cli
