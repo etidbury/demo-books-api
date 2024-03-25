@@ -94,3 +94,9 @@ kong.yml
 terraform.tfstate
 terraform.tfstate.backup
 .terraform.tfstate.lock.info
+
+
+## SST 
+.sst
+.open-next
+sst-env.d.ts
