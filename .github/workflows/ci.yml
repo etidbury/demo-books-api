@@ -43,9 +43,10 @@ jobs:
         run: pnpm run build
 
       - name: Run apps in background
-        run: pnpm run start & sleep 20s && kill $!
+        run: pnpm run start &
 
       - name: Check web server is running
+        timeout-minutes: 1
         run: |
           CHECK_RESPONSE__URL="http://localhost:3000/" \
           CHECK_RESPONSE__EXPECT_STATUS_CODE="200" \
