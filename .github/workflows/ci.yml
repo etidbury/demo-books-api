@@ -51,5 +51,5 @@ jobs:
           CHECK_RESPONSE__EXPECT_STATUS_CODE="200" \
           bash ./util/check_response_wait_code.sh
 
-      - name: Unit tests
-        run: pnpm run test:unit:ci
+      - name: Run all checks via Makefile
+        run: make check
