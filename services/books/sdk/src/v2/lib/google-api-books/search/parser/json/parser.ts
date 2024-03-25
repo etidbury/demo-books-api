@@ -27,9 +27,9 @@ export class GoogleApiBookParserJSON
     item: TGoogleBookItem,
   ): TBookPrimaryAuthor {
     const foundAuthor: TBookPrimaryAuthor | undefined = item?.volumeInfo
-      ?.authors[0] as unknown as TBookPrimaryAuthor;
-    if (!foundAuthor) {
-      throw new Error("_parseISBN(): Type ISBN_13 not found");
+      ?.authors?.[0] as unknown as TBookPrimaryAuthor;
+    if (!foundAuthor?.length) {
+      return "[no author]" as TBookPrimaryAuthor;
     }
     return foundAuthor;
   }
@@ -67,8 +67,6 @@ export class GoogleApiBookParserJSON
       GoogleApiBookSearchResponseSchemaJSON.safeParse(responseJson);
 
     if (!responseParsed.success) {
-      console.error("responseParsed.error", responseParsed.error);
-      console.error("responseJson", responseJson);
       throw new Error(
         `GoogleApiBookParserJSON.parseResponse(): Invalid response JSON`,
       );

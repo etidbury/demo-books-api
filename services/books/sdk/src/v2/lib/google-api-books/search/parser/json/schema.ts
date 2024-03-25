@@ -3,7 +3,7 @@ import { z } from "zod";
 const VolumeInfoSchema = z.object({
   title: z.string(),
   subtitle: z.string().optional(),
-  authors: z.array(z.string()),
+  authors: z.array(z.string()).optional(),
   // publisher: z.string(),
   // publishedDate: z.string(),
   // description: z.string(),
