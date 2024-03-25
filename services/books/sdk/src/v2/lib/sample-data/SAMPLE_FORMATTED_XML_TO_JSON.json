@@ -1,0 +1,1859 @@
+{
+  "feed": {
+    "xmlns": "http://www.w3.org/2005/Atom",
+    "xmlns:openSearch": "http://a9.com/-/spec/opensearchrss/1.0/",
+    "xmlns:gbs": "http://schemas.google.com/books/2008",
+    "xmlns:gd": "http://schemas.google.com/g/2005",
+    "xmlns:batch": "http://schemas.google.com/gdata/batch",
+    "xmlns:dc": "http://purl.org/dc/terms",
+    "children": [
+      {
+        "id": {
+          "content": "http://www.google.com/books/feeds/volumes"
+        }
+      },
+      {
+        "updated": {
+          "content": "2024-03-24T23:33:34.000Z"
+        }
+      },
+      {
+        "category": {
+          "scheme": "http://schemas.google.com/g/2005#kind",
+          "term": "http://schemas.google.com/books/2008#volume"
+        }
+      },
+      {
+        "title": {
+          "type": "text",
+          "content": "Search results for inauthor:tim"
+        }
+      },
+      {
+        "link": {
+          "rel": "alternate",
+          "type": "text/html",
+          "href": "http://www.google.com"
+        }
+      },
+      {
+        "link": {
+          "rel": "http://schemas.google.com/g/2005#feed",
+          "type": "application/atom+xml",
+          "href": "https://www.google.com/books/feeds/volumes"
+        }
+      },
+      {
+        "link": {
+          "rel": "self",
+          "type": "application/atom+xml",
+          "href": "https://www.google.com/books/feeds/volumes?q=inauthor%3Atim"
+        }
+      },
+      {
+        "link": {
+          "rel": "next",
+          "type": "application/atom+xml",
+          "href": "https://www.google.com/books/feeds/volumes?q=inauthor%3Atim&amp;start-index=11&amp;max-results=10"
+        }
+      },
+      {
+        "author": {
+          "children": [
+            {
+              "name": {
+                "content": "Google Books Search"
+              }
+            },
+            {
+              "uri": {
+                "content": "http://www.google.com"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "generator": {
+          "version": "beta",
+          "content": "Google Book Search data API"
+        }
+      },
+      {
+        "openSearch:totalResults": {
+          "content": "200"
+        }
+      },
+      {
+        "openSearch:startIndex": {
+          "content": "1"
+        }
+      },
+      {
+        "openSearch:itemsPerPage": {
+          "content": "10"
+        }
+      },
+      {
+        "entry": {
+          "children": [
+            {
+              "id": {
+                "content": "http://www.google.com/books/feeds/volumes/KxQaCAAAQBAJ"
+              }
+            },
+            {
+              "updated": {
+                "content": "2024-03-24T23:33:34.000Z"
+              }
+            },
+            {
+              "category": {
+                "scheme": "http://schemas.google.com/g/2005#kind",
+                "term": "http://schemas.google.com/books/2008#volume"
+              }
+            },
+            {
+              "title": {
+                "type": "text",
+                "content": "The Serbs"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/thumbnail",
+                "type": "image/x-unknown",
+                "href": "http://books.google.com/books/content?id=KxQaCAAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/info",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=KxQaCAAAQBAJ&amp;dq=inauthor:tim&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/preview",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=KxQaCAAAQBAJ&amp;printsec=frontcover&amp;dq=inauthor:tim&amp;cd=1&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/annotation",
+                "type": "application/atom+xml",
+                "href": "http://www.google.com/books/feeds/users/me/volumes"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/buylink",
+                "type": "text/html",
+                "href": "https://play.google.com/store/books/details?id=KxQaCAAAQBAJ&amp;rdid=book-KxQaCAAAQBAJ&amp;rdot=1&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=KxQaCAAAQBAJ&amp;dq=inauthor:tim"
+              }
+            },
+            {
+              "link": {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "https://www.google.com/books/feeds/volumes/KxQaCAAAQBAJ"
+              }
+            },
+            {
+              "gbs:contentVersion": {
+                "content": "1.2.2.0.preview.3"
+              }
+            },
+            {
+              "gbs:embeddability": {
+                "value": "http://schemas.google.com/books/2008#embeddable"
+              }
+            },
+            {
+              "gbs:openAccess": {
+                "value": "http://schemas.google.com/books/2008#disabled"
+              }
+            },
+            {
+              "gbs:viewability": {
+                "value": "http://schemas.google.com/books/2008#view_partial"
+              }
+            },
+            {
+              "dc:creator": {
+                "content": "Tim Judah"
+              }
+            },
+            {
+              "dc:date": {
+                "content": "2008-10-01"
+              }
+            },
+            {
+              "dc:description": {
+                "content": "In this challenging new book, Timothy Judah, who covered the war years in former Yugoslavia for the London Times and the Economist, argues that neither is true."
+              }
+            },
+            {
+              "dc:format": {
+                "content": "676 pages"
+              }
+            },
+            {
+              "dc:format": {
+                "content": "book"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "KxQaCAAAQBAJ"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:9780300147841"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:0300147848"
+              }
+            },
+            {
+              "dc:language": {
+                "content": "en"
+              }
+            },
+            {
+              "gbs:price": {
+                "type": "SuggestedRetailPrice",
+                "children": [
+                  {
+                    "gd:money": {
+                      "amount": "16.99",
+                      "currencyCode": "GBP"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "gbs:price": {
+                "type": "RetailPrice",
+                "children": [
+                  {
+                    "gd:money": {
+                      "amount": "16.99",
+                      "currencyCode": "GBP"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "dc:publisher": {
+                "content": "Yale University Press"
+              }
+            },
+            {
+              "dc:subject": {
+                "content": "History"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "The Serbs"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "History, Myth and the Destruction of Yugoslavia"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "entry": {
+          "children": [
+            {
+              "id": {
+                "content": "http://www.google.com/books/feeds/volumes/bsoy_-Ep_0EC"
+              }
+            },
+            {
+              "updated": {
+                "content": "2024-03-24T23:33:34.000Z"
+              }
+            },
+            {
+              "category": {
+                "scheme": "http://schemas.google.com/g/2005#kind",
+                "term": "http://schemas.google.com/books/2008#volume"
+              }
+            },
+            {
+              "title": {
+                "type": "text",
+                "content": "The Jungle, Japanese and the British Commonwealth Armies at War, 1941-45"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/thumbnail",
+                "type": "image/x-unknown",
+                "href": "http://books.google.com/books/content?id=bsoy_-Ep_0EC&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/info",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=bsoy_-Ep_0EC&amp;dq=inauthor:tim&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/preview",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=bsoy_-Ep_0EC&amp;printsec=frontcover&amp;dq=inauthor:tim&amp;cd=2&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/annotation",
+                "type": "application/atom+xml",
+                "href": "http://www.google.com/books/feeds/users/me/volumes"
+              }
+            },
+            {
+              "link": {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=bsoy_-Ep_0EC&amp;dq=inauthor:tim"
+              }
+            },
+            {
+              "link": {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "https://www.google.com/books/feeds/volumes/bsoy_-Ep_0EC"
+              }
+            },
+            {
+              "gbs:contentVersion": {
+                "content": "1.4.2.0.preview.1"
+              }
+            },
+            {
+              "gbs:embeddability": {
+                "value": "http://schemas.google.com/books/2008#embeddable"
+              }
+            },
+            {
+              "gbs:openAccess": {
+                "value": "http://schemas.google.com/books/2008#disabled"
+              }
+            },
+            {
+              "gbs:viewability": {
+                "value": "http://schemas.google.com/books/2008#view_partial"
+              }
+            },
+            {
+              "dc:creator": {
+                "content": "Tim Moreman"
+              }
+            },
+            {
+              "dc:date": {
+                "content": "2013-04-15"
+              }
+            },
+            {
+              "dc:description": {
+                "content": "This book focuses on the British Commonwealth armies in SE Asia and the SW Pacific during the Second World War, which, following the disastrous Malayan and Burma campaigns, had to hurriedly re-train, re-equip and re-organise their ..."
+              }
+            },
+            {
+              "dc:format": {
+                "content": "295 pages"
+              }
+            },
+            {
+              "dc:format": {
+                "content": "book"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "bsoy_-Ep_0EC"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:9781135764562"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:1135764565"
+              }
+            },
+            {
+              "dc:language": {
+                "content": "en"
+              }
+            },
+            {
+              "dc:publisher": {
+                "content": "Routledge"
+              }
+            },
+            {
+              "dc:subject": {
+                "content": "History"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "The Jungle, Japanese and the British Commonwealth Armies at War, 1941-45"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "Fighting Methods, Doctrine and Training for Jungle Warfare"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "entry": {
+          "children": [
+            {
+              "id": {
+                "content": "http://www.google.com/books/feeds/volumes/Ea_HBQAAQBAJ"
+              }
+            },
+            {
+              "updated": {
+                "content": "2024-03-24T23:33:34.000Z"
+              }
+            },
+            {
+              "category": {
+                "scheme": "http://schemas.google.com/g/2005#kind",
+                "term": "http://schemas.google.com/books/2008#volume"
+              }
+            },
+            {
+              "title": {
+                "type": "text",
+                "content": "Helping Children and Young People who Self-harm"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/thumbnail",
+                "type": "image/x-unknown",
+                "href": "http://books.google.com/books/content?id=Ea_HBQAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/info",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=Ea_HBQAAQBAJ&amp;dq=inauthor:tim&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/preview",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=Ea_HBQAAQBAJ&amp;printsec=frontcover&amp;dq=inauthor:tim&amp;cd=3&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/annotation",
+                "type": "application/atom+xml",
+                "href": "http://www.google.com/books/feeds/users/me/volumes"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/buylink",
+                "type": "text/html",
+                "href": "https://play.google.com/store/books/details?id=Ea_HBQAAQBAJ&amp;rdid=book-Ea_HBQAAQBAJ&amp;rdot=1&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=Ea_HBQAAQBAJ&amp;dq=inauthor:tim"
+              }
+            },
+            {
+              "link": {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "https://www.google.com/books/feeds/volumes/Ea_HBQAAQBAJ"
+              }
+            },
+            {
+              "gbs:contentVersion": {
+                "content": "1.4.4.0.preview.3"
+              }
+            },
+            {
+              "gbs:embeddability": {
+                "value": "http://schemas.google.com/books/2008#embeddable"
+              }
+            },
+            {
+              "gbs:openAccess": {
+                "value": "http://schemas.google.com/books/2008#disabled"
+              }
+            },
+            {
+              "gbs:viewability": {
+                "value": "http://schemas.google.com/books/2008#view_partial"
+              }
+            },
+            {
+              "dc:creator": {
+                "content": "Tim McDougall"
+              }
+            },
+            {
+              "dc:creator": {
+                "content": "Marie Armstrong"
+              }
+            },
+            {
+              "dc:creator": {
+                "content": "Gemma Trainor"
+              }
+            },
+            {
+              "dc:date": {
+                "content": "2010-07-12"
+              }
+            },
+            {
+              "dc:description": {
+                "content": "Helping Children and Young People who Self-harm provides clear and practical guidance for health professionals and other members of the children’s workforce who are confronted by this complex and difficult area."
+              }
+            },
+            {
+              "dc:format": {
+                "content": "288 pages"
+              }
+            },
+            {
+              "dc:format": {
+                "content": "book"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "Ea_HBQAAQBAJ"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:9781136953293"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:1136953299"
+              }
+            },
+            {
+              "dc:language": {
+                "content": "en"
+              }
+            },
+            {
+              "gbs:price": {
+                "type": "SuggestedRetailPrice",
+                "children": [
+                  {
+                    "gd:money": {
+                      "amount": "28.79",
+                      "currencyCode": "GBP"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "gbs:price": {
+                "type": "RetailPrice",
+                "children": [
+                  {
+                    "gd:money": {
+                      "amount": "21.03",
+                      "currencyCode": "GBP"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "dc:publisher": {
+                "content": "Routledge"
+              }
+            },
+            {
+              "dc:subject": {
+                "content": "Family &amp; Relationships"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "Helping Children and Young People who Self-harm"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "An Introduction to Self-harming and Suicidal Behaviours for Health Professionals"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "entry": {
+          "children": [
+            {
+              "id": {
+                "content": "http://www.google.com/books/feeds/volumes/NjAJhwkvhyAC"
+              }
+            },
+            {
+              "updated": {
+                "content": "2024-03-24T23:33:34.000Z"
+              }
+            },
+            {
+              "category": {
+                "scheme": "http://schemas.google.com/g/2005#kind",
+                "term": "http://schemas.google.com/books/2008#volume"
+              }
+            },
+            {
+              "title": {
+                "type": "text",
+                "content": "A Pair of Blue Eyes"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/thumbnail",
+                "type": "image/x-unknown",
+                "href": "http://books.google.com/books/content?id=NjAJhwkvhyAC&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/info",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=NjAJhwkvhyAC&amp;dq=inauthor:tim&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/preview",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=NjAJhwkvhyAC&amp;printsec=frontcover&amp;dq=inauthor:tim&amp;cd=4&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/annotation",
+                "type": "application/atom+xml",
+                "href": "http://www.google.com/books/feeds/users/me/volumes"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/buylink",
+                "type": "text/html",
+                "href": "https://play.google.com/store/books/details?id=NjAJhwkvhyAC&amp;rdid=book-NjAJhwkvhyAC&amp;rdot=1&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=NjAJhwkvhyAC&amp;dq=inauthor:tim"
+              }
+            },
+            {
+              "link": {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "https://www.google.com/books/feeds/volumes/NjAJhwkvhyAC"
+              }
+            },
+            {
+              "gbs:contentVersion": {
+                "content": "0.2.1.0.preview.1"
+              }
+            },
+            {
+              "gbs:embeddability": {
+                "value": "http://schemas.google.com/books/2008#embeddable"
+              }
+            },
+            {
+              "gbs:openAccess": {
+                "value": "http://schemas.google.com/books/2008#disabled"
+              }
+            },
+            {
+              "gbs:viewability": {
+                "value": "http://schemas.google.com/books/2008#view_partial"
+              }
+            },
+            {
+              "dc:creator": {
+                "content": "Thomas Hardy"
+              }
+            },
+            {
+              "dc:creator": {
+                "content": "Tim Dolin"
+              }
+            },
+            {
+              "dc:date": {
+                "content": "2005-10-13"
+              }
+            },
+            {
+              "dc:description": {
+                "content": "Elfride&amp;#39;s dilemma mirrors the difficult decision Hardy himself had to make with this novel: to pursue the profession of architecture, where he was established, or literature, where he had yet to make his name?"
+              }
+            },
+            {
+              "dc:format": {
+                "content": "432 pages"
+              }
+            },
+            {
+              "dc:format": {
+                "content": "book"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "NjAJhwkvhyAC"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:0191517968"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:9780191517969"
+              }
+            },
+            {
+              "dc:language": {
+                "content": "en"
+              }
+            },
+            {
+              "gbs:price": {
+                "type": "SuggestedRetailPrice",
+                "children": [
+                  {
+                    "gd:money": {
+                      "amount": "7.49",
+                      "currencyCode": "GBP"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "gbs:price": {
+                "type": "RetailPrice",
+                "children": [
+                  {
+                    "gd:money": {
+                      "amount": "4.72",
+                      "currencyCode": "GBP"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "dc:publisher": {
+                "content": "OUP Oxford"
+              }
+            },
+            {
+              "dc:subject": {
+                "content": "Fiction"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "A Pair of Blue Eyes"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "entry": {
+          "children": [
+            {
+              "id": {
+                "content": "http://www.google.com/books/feeds/volumes/5CRXEAAAQBAJ"
+              }
+            },
+            {
+              "updated": {
+                "content": "2024-03-24T23:33:34.000Z"
+              }
+            },
+            {
+              "category": {
+                "scheme": "http://schemas.google.com/g/2005#kind",
+                "term": "http://schemas.google.com/books/2008#volume"
+              }
+            },
+            {
+              "title": {
+                "type": "text",
+                "content": "Conflict in Nagorno-Karabakh, Abkhazia and South Ossetia"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/thumbnail",
+                "type": "image/x-unknown",
+                "href": "http://books.google.com/books/content?id=5CRXEAAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/info",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=5CRXEAAAQBAJ&amp;dq=inauthor:tim&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/preview",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=5CRXEAAAQBAJ&amp;printsec=frontcover&amp;dq=inauthor:tim&amp;cd=5&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/annotation",
+                "type": "application/atom+xml",
+                "href": "http://www.google.com/books/feeds/users/me/volumes"
+              }
+            },
+            {
+              "link": {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=5CRXEAAAQBAJ&amp;dq=inauthor:tim"
+              }
+            },
+            {
+              "link": {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "https://www.google.com/books/feeds/volumes/5CRXEAAAQBAJ"
+              }
+            },
+            {
+              "gbs:contentVersion": {
+                "content": "0.2.2.0.preview.1"
+              }
+            },
+            {
+              "gbs:embeddability": {
+                "value": "http://schemas.google.com/books/2008#embeddable"
+              }
+            },
+            {
+              "gbs:openAccess": {
+                "value": "http://schemas.google.com/books/2008#disabled"
+              }
+            },
+            {
+              "gbs:viewability": {
+                "value": "http://schemas.google.com/books/2008#view_partial"
+              }
+            },
+            {
+              "dc:creator": {
+                "content": "Tim Potier"
+              }
+            },
+            {
+              "dc:date": {
+                "content": "2021-12-28"
+              }
+            },
+            {
+              "dc:description": {
+                "content": "In a region where Western academic writing has focussed, during the last decade, almost exclusively on the dynamics of regional security and Great Power rivalry, even in the context of conflict, this volume provides an important and ..."
+              }
+            },
+            {
+              "dc:format": {
+                "content": "330 pages"
+              }
+            },
+            {
+              "dc:format": {
+                "content": "book"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "5CRXEAAAQBAJ"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:9789004478169"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:9004478167"
+              }
+            },
+            {
+              "dc:language": {
+                "content": "en"
+              }
+            },
+            {
+              "dc:publisher": {
+                "content": "BRILL"
+              }
+            },
+            {
+              "dc:subject": {
+                "content": "Law"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "Conflict in Nagorno-Karabakh, Abkhazia and South Ossetia"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "A Legal Appraisal"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "entry": {
+          "children": [
+            {
+              "id": {
+                "content": "http://www.google.com/books/feeds/volumes/sVf1na3FN_UC"
+              }
+            },
+            {
+              "updated": {
+                "content": "2024-03-24T23:33:34.000Z"
+              }
+            },
+            {
+              "category": {
+                "scheme": "http://schemas.google.com/g/2005#kind",
+                "term": "http://schemas.google.com/books/2008#volume"
+              }
+            },
+            {
+              "title": {
+                "type": "text",
+                "content": "Kosovo"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/thumbnail",
+                "type": "image/x-unknown",
+                "href": "http://books.google.com/books/content?id=sVf1na3FN_UC&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/info",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=sVf1na3FN_UC&amp;dq=inauthor:tim&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/preview",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=sVf1na3FN_UC&amp;printsec=frontcover&amp;dq=inauthor:tim&amp;cd=6&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/annotation",
+                "type": "application/atom+xml",
+                "href": "http://www.google.com/books/feeds/users/me/volumes"
+              }
+            },
+            {
+              "link": {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=sVf1na3FN_UC&amp;dq=inauthor:tim"
+              }
+            },
+            {
+              "link": {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "https://www.google.com/books/feeds/volumes/sVf1na3FN_UC"
+              }
+            },
+            {
+              "gbs:contentVersion": {
+                "content": "2.3.5.0.preview.2"
+              }
+            },
+            {
+              "gbs:embeddability": {
+                "value": "http://schemas.google.com/books/2008#embeddable"
+              }
+            },
+            {
+              "gbs:openAccess": {
+                "value": "http://schemas.google.com/books/2008#disabled"
+              }
+            },
+            {
+              "gd:rating": {
+                "min": "1",
+                "max": "5",
+                "average": "4.00"
+              }
+            },
+            {
+              "gbs:viewability": {
+                "value": "http://schemas.google.com/books/2008#view_partial"
+              }
+            },
+            {
+              "dc:creator": {
+                "content": "Tim Judah"
+              }
+            },
+            {
+              "dc:date": {
+                "content": "2002-01-01"
+              }
+            },
+            {
+              "dc:description": {
+                "content": "Om det spændte forhold mellem albanere og serbere i Kosovo, som har eksisteret siden middelalderen, og som til sidst førte til NATOs bombardement og Kosovos forvandling fra serbisk provins til internationalt protektorat"
+              }
+            },
+            {
+              "dc:format": {
+                "content": "410 pages"
+              }
+            },
+            {
+              "dc:format": {
+                "content": "book"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "sVf1na3FN_UC"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:0300097255"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:9780300097252"
+              }
+            },
+            {
+              "dc:language": {
+                "content": "en"
+              }
+            },
+            {
+              "dc:publisher": {
+                "content": "Yale University Press"
+              }
+            },
+            {
+              "dc:subject": {
+                "content": "History"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "Kosovo"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "War and Revenge"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "entry": {
+          "children": [
+            {
+              "id": {
+                "content": "http://www.google.com/books/feeds/volumes/tEeBAgAAQBAJ"
+              }
+            },
+            {
+              "updated": {
+                "content": "2024-03-24T23:33:34.000Z"
+              }
+            },
+            {
+              "category": {
+                "scheme": "http://schemas.google.com/g/2005#kind",
+                "term": "http://schemas.google.com/books/2008#volume"
+              }
+            },
+            {
+              "title": {
+                "type": "text",
+                "content": "Studying Popular Music Culture"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/thumbnail",
+                "type": "image/x-unknown",
+                "href": "http://books.google.com/books/content?id=tEeBAgAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/info",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=tEeBAgAAQBAJ&amp;dq=inauthor:tim&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/preview",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=tEeBAgAAQBAJ&amp;printsec=frontcover&amp;dq=inauthor:tim&amp;cd=7&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/annotation",
+                "type": "application/atom+xml",
+                "href": "http://www.google.com/books/feeds/users/me/volumes"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/buylink",
+                "type": "text/html",
+                "href": "https://play.google.com/store/books/details?id=tEeBAgAAQBAJ&amp;rdid=book-tEeBAgAAQBAJ&amp;rdot=1&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=tEeBAgAAQBAJ&amp;dq=inauthor:tim"
+              }
+            },
+            {
+              "link": {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "https://www.google.com/books/feeds/volumes/tEeBAgAAQBAJ"
+              }
+            },
+            {
+              "gbs:contentVersion": {
+                "content": "2.4.5.0.preview.3"
+              }
+            },
+            {
+              "gbs:embeddability": {
+                "value": "http://schemas.google.com/books/2008#embeddable"
+              }
+            },
+            {
+              "gbs:openAccess": {
+                "value": "http://schemas.google.com/books/2008#disabled"
+              }
+            },
+            {
+              "gbs:viewability": {
+                "value": "http://schemas.google.com/books/2008#view_partial"
+              }
+            },
+            {
+              "dc:creator": {
+                "content": "Tim Wall"
+              }
+            },
+            {
+              "dc:date": {
+                "content": "2013-02-28"
+              }
+            },
+            {
+              "dc:description": {
+                "content": "Taking into account recent changes and developments in the industry, this book outlines the key concepts, offers fresh perspectives and encourages readers to reflect on their own work."
+              }
+            },
+            {
+              "dc:format": {
+                "content": "332 pages"
+              }
+            },
+            {
+              "dc:format": {
+                "content": "book"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "tEeBAgAAQBAJ"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:9781446291016"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:1446291014"
+              }
+            },
+            {
+              "dc:language": {
+                "content": "en"
+              }
+            },
+            {
+              "gbs:price": {
+                "type": "SuggestedRetailPrice",
+                "children": [
+                  {
+                    "gd:money": {
+                      "amount": "31.99",
+                      "currencyCode": "GBP"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "gbs:price": {
+                "type": "RetailPrice",
+                "children": [
+                  {
+                    "gd:money": {
+                      "amount": "31.99",
+                      "currencyCode": "GBP"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "dc:publisher": {
+                "content": "SAGE"
+              }
+            },
+            {
+              "dc:subject": {
+                "content": "Social Science"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "Studying Popular Music Culture"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "entry": {
+          "children": [
+            {
+              "id": {
+                "content": "http://www.google.com/books/feeds/volumes/4RpgRh7rU5sC"
+              }
+            },
+            {
+              "updated": {
+                "content": "2024-03-24T23:33:34.000Z"
+              }
+            },
+            {
+              "category": {
+                "scheme": "http://schemas.google.com/g/2005#kind",
+                "term": "http://schemas.google.com/books/2008#volume"
+              }
+            },
+            {
+              "title": {
+                "type": "text",
+                "content": "Bird Sense"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/thumbnail",
+                "type": "image/x-unknown",
+                "href": "http://books.google.com/books/content?id=4RpgRh7rU5sC&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/info",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=4RpgRh7rU5sC&amp;dq=inauthor:tim&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/preview",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=4RpgRh7rU5sC&amp;printsec=frontcover&amp;dq=inauthor:tim&amp;cd=8&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/annotation",
+                "type": "application/atom+xml",
+                "href": "http://www.google.com/books/feeds/users/me/volumes"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/buylink",
+                "type": "text/html",
+                "href": "https://play.google.com/store/books/details?id=4RpgRh7rU5sC&amp;rdid=book-4RpgRh7rU5sC&amp;rdot=1&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=4RpgRh7rU5sC&amp;dq=inauthor:tim"
+              }
+            },
+            {
+              "link": {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "https://www.google.com/books/feeds/volumes/4RpgRh7rU5sC"
+              }
+            },
+            {
+              "gbs:contentVersion": {
+                "content": "0.7.8.0.preview.3"
+              }
+            },
+            {
+              "gbs:embeddability": {
+                "value": "http://schemas.google.com/books/2008#embeddable"
+              }
+            },
+            {
+              "gbs:openAccess": {
+                "value": "http://schemas.google.com/books/2008#disabled"
+              }
+            },
+            {
+              "gbs:viewability": {
+                "value": "http://schemas.google.com/books/2008#view_partial"
+              }
+            },
+            {
+              "dc:creator": {
+                "content": "Tim Birkhead"
+              }
+            },
+            {
+              "dc:date": {
+                "content": "2012-02-02"
+              }
+            },
+            {
+              "dc:description": {
+                "content": "Bird Sense addresses questions like these and many more, by describing the senses of birds that enable them to interpret their environment and to interact with each other."
+              }
+            },
+            {
+              "dc:format": {
+                "content": "290 pages"
+              }
+            },
+            {
+              "dc:format": {
+                "content": "book"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "4RpgRh7rU5sC"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:9781408828717"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:1408828715"
+              }
+            },
+            {
+              "dc:language": {
+                "content": "en"
+              }
+            },
+            {
+              "gbs:price": {
+                "type": "SuggestedRetailPrice",
+                "children": [
+                  {
+                    "gd:money": {
+                      "amount": "11.99",
+                      "currencyCode": "GBP"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "gbs:price": {
+                "type": "RetailPrice",
+                "children": [
+                  {
+                    "gd:money": {
+                      "amount": "8.03",
+                      "currencyCode": "GBP"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "dc:publisher": {
+                "content": "Bloomsbury Publishing"
+              }
+            },
+            {
+              "dc:subject": {
+                "content": "Science"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "Bird Sense"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "What It\"s Like to Be a Bird"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "entry": {
+          "children": [
+            {
+              "id": {
+                "content": "http://www.google.com/books/feeds/volumes/apaDDwAAQBAJ"
+              }
+            },
+            {
+              "updated": {
+                "content": "2024-03-24T23:33:34.000Z"
+              }
+            },
+            {
+              "category": {
+                "scheme": "http://schemas.google.com/g/2005#kind",
+                "term": "http://schemas.google.com/books/2008#volume"
+              }
+            },
+            {
+              "title": {
+                "type": "text",
+                "content": "Thinking Sociologically"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/thumbnail",
+                "type": "image/x-unknown",
+                "href": "http://books.google.com/books/content?id=apaDDwAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/info",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=apaDDwAAQBAJ&amp;dq=inauthor:tim&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/preview",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=apaDDwAAQBAJ&amp;printsec=frontcover&amp;dq=inauthor:tim&amp;cd=9&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/annotation",
+                "type": "application/atom+xml",
+                "href": "http://www.google.com/books/feeds/users/me/volumes"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/buylink",
+                "type": "text/html",
+                "href": "https://play.google.com/store/books/details?id=apaDDwAAQBAJ&amp;rdid=book-apaDDwAAQBAJ&amp;rdot=1&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=apaDDwAAQBAJ&amp;dq=inauthor:tim"
+              }
+            },
+            {
+              "link": {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "https://www.google.com/books/feeds/volumes/apaDDwAAQBAJ"
+              }
+            },
+            {
+              "gbs:contentVersion": {
+                "content": "0.0.1.0.preview.1"
+              }
+            },
+            {
+              "gbs:embeddability": {
+                "value": "http://schemas.google.com/books/2008#embeddable"
+              }
+            },
+            {
+              "gbs:openAccess": {
+                "value": "http://schemas.google.com/books/2008#disabled"
+              }
+            },
+            {
+              "gbs:viewability": {
+                "value": "http://schemas.google.com/books/2008#view_partial"
+              }
+            },
+            {
+              "dc:creator": {
+                "content": "Zygmunt Bauman"
+              }
+            },
+            {
+              "dc:creator": {
+                "content": "Tim May"
+              }
+            },
+            {
+              "dc:date": {
+                "content": "2019-01-10"
+              }
+            },
+            {
+              "dc:description": {
+                "content": "There is no student of sociology who will not benefit from this book.&amp;quot; —Craig Calhoun, University Professor of Social Sciences, Arizona State University, USA Now in its third edition, Thinking Sociologically continues to offer a ..."
+              }
+            },
+            {
+              "dc:format": {
+                "content": "216 pages"
+              }
+            },
+            {
+              "dc:format": {
+                "content": "book"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "apaDDwAAQBAJ"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:9781118959947"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:1118959949"
+              }
+            },
+            {
+              "dc:language": {
+                "content": "en"
+              }
+            },
+            {
+              "gbs:price": {
+                "type": "SuggestedRetailPrice",
+                "children": [
+                  {
+                    "gd:money": {
+                      "amount": "23.99",
+                      "currencyCode": "GBP"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "gbs:price": {
+                "type": "RetailPrice",
+                "children": [
+                  {
+                    "gd:money": {
+                      "amount": "23.99",
+                      "currencyCode": "GBP"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "dc:publisher": {
+                "content": "John Wiley &amp; Sons"
+              }
+            },
+            {
+              "dc:subject": {
+                "content": "Social Science"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "Thinking Sociologically"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "entry": {
+          "children": [
+            {
+              "id": {
+                "content": "http://www.google.com/books/feeds/volumes/l2Q4EAAAQBAJ"
+              }
+            },
+            {
+              "updated": {
+                "content": "2024-03-24T23:33:34.000Z"
+              }
+            },
+            {
+              "category": {
+                "scheme": "http://schemas.google.com/g/2005#kind",
+                "term": "http://schemas.google.com/books/2008#volume"
+              }
+            },
+            {
+              "title": {
+                "type": "text",
+                "content": "The Triumph of Music"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/thumbnail",
+                "type": "image/x-unknown",
+                "href": "http://books.google.com/books/content?id=l2Q4EAAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/info",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=l2Q4EAAAQBAJ&amp;dq=inauthor:tim&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/preview",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=l2Q4EAAAQBAJ&amp;printsec=frontcover&amp;dq=inauthor:tim&amp;cd=10&amp;source=gbs_gdata"
+              }
+            },
+            {
+              "link": {
+                "rel": "http://schemas.google.com/books/2008/annotation",
+                "type": "application/atom+xml",
+                "href": "http://www.google.com/books/feeds/users/me/volumes"
+              }
+            },
+            {
+              "link": {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://books.google.com/books?id=l2Q4EAAAQBAJ&amp;dq=inauthor:tim"
+              }
+            },
+            {
+              "link": {
+                "rel": "self",
+                "type": "application/atom+xml",
+                "href": "https://www.google.com/books/feeds/volumes/l2Q4EAAAQBAJ"
+              }
+            },
+            {
+              "gbs:contentVersion": {
+                "content": "2.2.2.0.preview.3"
+              }
+            },
+            {
+              "gbs:embeddability": {
+                "value": "http://schemas.google.com/books/2008#embeddable"
+              }
+            },
+            {
+              "gbs:openAccess": {
+                "value": "http://schemas.google.com/books/2008#disabled"
+              }
+            },
+            {
+              "gbs:viewability": {
+                "value": "http://schemas.google.com/books/2008#view_partial"
+              }
+            },
+            {
+              "dc:creator": {
+                "content": "Tim Blanning"
+              }
+            },
+            {
+              "dc:date": {
+                "content": "2010-11-15"
+              }
+            },
+            {
+              "dc:description": {
+                "content": "In the twentieth century, new technological, social, and spatial forces combined to make music ever more popular and ubiquitous. In a concluding chapter, Tim Blanning considers music in conjunction with nationalism, race, and sex."
+              }
+            },
+            {
+              "dc:format": {
+                "content": "440 pages"
+              }
+            },
+            {
+              "dc:format": {
+                "content": "book"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "l2Q4EAAAQBAJ"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:9780674417274"
+              }
+            },
+            {
+              "dc:identifier": {
+                "content": "ISBN:0674417275"
+              }
+            },
+            {
+              "dc:language": {
+                "content": "en"
+              }
+            },
+            {
+              "dc:publisher": {
+                "content": "Harvard University Press"
+              }
+            },
+            {
+              "dc:subject": {
+                "content": "History"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "The Triumph of Music"
+              }
+            },
+            {
+              "dc:title": {
+                "content": "The Rise of Composers, Musicians and Their Art"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
