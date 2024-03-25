@@ -1,12 +1,9 @@
 import { z } from "zod";
 
-import { IBookItem, IBookSearchApiClient } from "@acme/books-shared";
-import { wait } from "@acme/common";
-import {
-  fetchWithFormat,
-  HTTPResponseFormat,
-  IHTTPResponseParser,
-} from "@acme/http-api-client";
+import type { IBookItem, IBookSearchApiClient } from "@acme/books-shared";
+import { urljoin } from "@acme/common";
+import type { IHTTPResponseParser } from "@acme/http-api-client";
+import { fetchWithFormat, HTTPResponseFormat } from "@acme/http-api-client";
 
 import { BaseBookSearchApiClient } from "../../base/lib/client";
 import { DemoApiBookSearchParserJSON } from "./demo-api-books/json/parser";
@@ -46,7 +43,10 @@ export class BookSearchApiClient_V1
     }
 
     const response = await this._fetch(
-      "http://localhost:3000/api/demo_books_api_v1/books_search",
+      urljoin(
+        process.env.NEXT_PUBLIC_SITE_URL,
+        `/api/demo_books_api_v1/books_search`,
+      ),
       new URLSearchParams({
         limit: "" + args.limit,
         q: `${args.author}`,

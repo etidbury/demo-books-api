@@ -21,6 +21,8 @@ on:
 jobs:
   buildtestdev:
     environment: ${{ github.head_ref || github.ref_name }}
+    env:
+      NEXT_PUBLIC_SITE_URL: https://d286rl1ujj4u0.cloudfront.net
     name: Build and test development
     runs-on: ubuntu-latest
     timeout-minutes: 20
@@ -42,13 +44,10 @@ jobs:
       - name: Check Build
         run: pnpm run build
 
-      - name: Run apps in background
-        run: pnpm run start &
-
       - name: Check web server is running
         timeout-minutes: 1
         run: |
-          CHECK_RESPONSE__URL="http://localhost:3000/" \
+          CHECK_RESPONSE__URL="${NEXT_PUBLIC_SITE_URL}" \
           CHECK_RESPONSE__EXPECT_STATUS_CODE="200" \
           bash ./util/check_response_wait_code.sh
 

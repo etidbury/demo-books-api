@@ -1,15 +1,9 @@
 import { z } from "zod";
 
-import {
-  IBookItem,
-  IBookSearchApiClient,
-  TBookPrimaryPrice,
-} from "@acme/books-shared";
-import {
-  fetchWithFormat,
-  HTTPResponseFormat,
-  IHTTPResponseParser,
-} from "@acme/http-api-client";
+import type { IBookItem, IBookSearchApiClient } from "@acme/books-shared";
+import { urljoin } from "@acme/common";
+import type { IHTTPResponseParser } from "@acme/http-api-client";
+import { fetchWithFormat, HTTPResponseFormat } from "@acme/http-api-client";
 
 import { BaseBookSearchApiClient } from "../../base/lib/client";
 import {
@@ -53,14 +47,17 @@ export class BookSearchApiClient_V2
     const response = await (this.format === HTTPResponseFormat.XML
       ? this._fetch(
           //"https://books.google.com/books/feeds/volumes",
-          "http://localhost:3000/api/proxy_googleapi/books_search",
+          urljoin(
+            process.env.NEXT_PUBLIC_SITE_URL,
+            `/api/proxy_googleapi/books_search`,
+          ),
           new URLSearchParams({
             maxResults: "" + args.limit,
             q: `inauthor:${args.author}`,
           }),
         )
       : this._fetch(
-          "https://www.googleapis.com/books/v1/volumes",
+          `https://www.googleapis.com/books/v1/volumes`,
           new URLSearchParams({
             limit: "" + args.limit,
             q: `inauthor:${args.author}`,
