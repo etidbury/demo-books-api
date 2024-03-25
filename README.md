@@ -10,7 +10,10 @@ make deps
 ## Get Started
 
 ```bash
-make init
+## runs all unit tests,linting and builds the project
+make check
+
+## runs apps locally
 make dev
 
 ## for other commands:
