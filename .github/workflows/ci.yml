@@ -8,13 +8,13 @@ on:
       - "feature/*"
       - "ft/*"
     paths:
-      - ".github/workflows/actions/**.*"
-      - ".github/workflows/ci.yml"
+      - "!.github/workflows/**.*"
       - "apps/**/*"
       - "packages/**/*"
       - "tooling/**/*"
       - "services/**/*"
       - "util/**/*"
+      - "jest.json"
       - "package.json"
       - "pnpm-lock.yaml"
 
