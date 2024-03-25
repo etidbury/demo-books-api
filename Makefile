@@ -3,6 +3,7 @@ version  ?= "1.0.0"
 
 # Set the Terraform version
 TERRAFORM_VERSION=1.7.5
+NEXT_PUBLIC_SITE_URL=https://d286rl1ujj4u0.cloudfront.net
 
 .PHONY: deps
 deps: ### Check prerequisites of work environment
@@ -101,11 +102,11 @@ _check:
 	make _tf_infra_cli cmd=validate infra_env=remote
 
 	## smoketests: check if services are running before e2e tests
-	CHECK_RESPONSE__URL="http://localhost:3000/" \
+	CHECK_RESPONSE__URL="${NEXT_PUBLIC_SITE_URL}" \
           CHECK_RESPONSE__EXPECT_STATUS_CODE="200" \
           bash ./util/check_response_wait_code.sh
 
-	pnpm run test:unit
+	NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL} pnpm run test:unit
 	pnpm run test:e2e
 	
 
