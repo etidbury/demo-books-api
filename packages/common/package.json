@@ -1,0 +1,24 @@
+{
+  "name": "@acme/common",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "files": [
+    "index.ts"
+  ],
+  "devDependencies": {
+    "@acme/eslint-config": "0.1.0",
+    "@acme/tsconfig": "^0.1.0"
+  },
+  "dependencies": {},
+  "scripts": {
+    "build": "esbuild ./index.ts --bundle --platform=node --outfile=dist/index.js --external:mqtt"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@acme/eslint-config/base"
+    ]
+  },
+  "prettier": "@acme/prettier-config"
+}

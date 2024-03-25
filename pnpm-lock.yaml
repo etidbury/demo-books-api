@@ -380,6 +380,9 @@ importers:
       '@acme/eslint-config':
         specifier: 0.1.0
         version: link:../../../tooling/eslint
+      '@acme/tsconfig':
+        specifier: ^0.1.0
+        version: link:../../../tooling/typescript
 
   services/books/shared:
     devDependencies:

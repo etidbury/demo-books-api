@@ -1,0 +1,30 @@
+{
+  "name": "@acme/helper-cdk",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "files": [
+    "index.ts"
+  ],
+  "devDependencies": {
+    "@acme/eslint-config": "0.1.0",
+    "@acme/tsconfig": "^0.1.0",
+    "@types/node": "^20.11.30"
+  },
+  "scripts": {
+    "build": "esbuild ./index.ts --bundle --platform=node --outfile=dist/index.js"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@acme/eslint-config/base"
+    ]
+  },
+  "prettier": "@acme/prettier-config",
+  "dependencies": {
+    "@acme/helper-env": "^0.1.0",
+    "aws-cdk": "^2.133.0",
+    "aws-cdk-lib": "^2.0.0",
+    "constructs": "^10.0.0"
+  }
+}
