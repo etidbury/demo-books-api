@@ -39,6 +39,7 @@ jobs:
     environment: ${{ inputs.deploy_env || github.event.inputs.deploy_env }}
     env:
       DEPLOY_ENV: ${{ inputs.deploy_env || github.event.inputs.deploy_env }}
+      NEXT_PUBLIC_SITE_URL: ${{ env.NEXT_PUBLIC_SITE_URL }}
     timeout-minutes: 20
     runs-on: ubuntu-latest
     container:
@@ -48,14 +49,11 @@ jobs:
         with:
           ref: ${{ inputs.deploy_env || github.event.inputs.deploy_env }}
 
-      - name: PNPM init
-        uses: ./.github/workflows/actions/pnpm_init
-
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: npx playwright test
+        run: npx playwright test --config playwright.config.ts
 
       - uses: actions/upload-artifact@v3
         if: always()
