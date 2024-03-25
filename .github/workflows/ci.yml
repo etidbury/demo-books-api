@@ -1,0 +1,45 @@
+## Version 1.0.0
+name: ci
+
+on:
+  push:
+    branches:
+      - dev
+      - "feature/*"
+      - "ft/*"
+    paths:
+      - ".github/workflows/actions/**.*"
+      - ".github/workflows/ci.yml"
+      - "apps/**/*"
+      - "packages/**/*"
+      - "tooling/**/*"
+      - "util/**/*"
+      - "package.json"
+      - "pnpm-lock.yaml"
+
+jobs:
+  buildtestdev:
+    environment: ${{ github.head_ref || github.ref_name }}
+    name: Build and test development
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: PNPM init
+        uses: ./.github/workflows/actions/pnpm_init
+
+      - name: Check Lint
+        run: pnpm run lint
+
+      - name: Check Prettier Format
+        run: pnpm run format
+
+      - name: Check Types
+        run: pnpm run type-check
+
+      - name: Check Build
+        run: pnpm run build
+
+      - name: Unit tests
+        run: pnpm run test:unit:ci
