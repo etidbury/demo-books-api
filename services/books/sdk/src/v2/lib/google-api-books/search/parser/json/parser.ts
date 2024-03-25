@@ -1,11 +1,13 @@
-import {
+import type {
   IBookItem,
   TBookPrimaryAuthor,
   TBookPrimaryISBN,
   TBookPrimaryPrice,
 } from "@acme/books-shared";
-import { random } from "@acme/common";
-import { HTTPClientResponse, IHTTPResponseParser } from "@acme/http-api-client";
+import type {
+  HTTPClientResponse,
+  IHTTPResponseParser,
+} from "@acme/http-api-client";
 
 import { GoogleApiBookSearchResponseSchemaJSON } from "./schema";
 
@@ -76,6 +78,6 @@ export class GoogleApiBookParserJSON
       return [];
     }
 
-    return items.map(GoogleApiBookParserJSON._parseBookItem);
+    return items.map((item) => GoogleApiBookParserJSON._parseBookItem(item));
   }
 }
