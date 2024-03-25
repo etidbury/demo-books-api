@@ -9,17 +9,12 @@ NEXT_PUBLIC_SITE_URL=https://d286rl1ujj4u0.cloudfront.net
 deps: ### Check prerequisites of work environment
 	pnpm --version || (echo "Please install pnpm: https://pnpm.io/installation" && exit 1)
 	docker --version || (echo "Please install docker: https://docs.docker.com/get-docker/" && exit 1)
-	terraform --version || (echo "Please install terraform: https://learn.hashicorp.com/tutorials/terraform/install-cli" && exit 1)
+	# terraform --version || (echo "Please install terraform: https://learn.hashicorp.com/tutorials/terraform/install-cli" && exit 1)
 
 .PHONY: init
 init: deps ### Init environment
 	if [ ! -f ./.env ]; then cp ./.env.example ./.env; fi
 	if [ ! -d ./node_modules ]; then pnpm install; fi
-
-	make _tf_infra_cli cmd=init infra_env=local
-	make _tf_infra_cli cmd=plan infra_env=local
-	make _tf_infra_cli cmd=apply cmd_args="-auto-approve" infra_env=local
-	# pnpm run db:update
 
 .PHONY: clean
 clean: tclean ### Cleans PNPM workspace (rm node_modules|dist), kills node processes, stop+rm docker containers
@@ -110,19 +105,3 @@ _check:
 	pnpm run test:e2e
 	
 
-
-## NOTE: use this to use locally installed terraform cli
-_tf_infra_cli:
-	if [ -z $(cmd) ]; then echo "cmd not set! (e.g. make _tf_infra_cli cmd=[cmd] infra_env=[infra_env])"; exit 1; fi
-	if [ -z $(infra_env) ]; then echo "infra_env not set! (e.g. make _tf_infra_cli cmd=[cmd] infra_env=[infra_env])"; exit 1; fi
-	cd ./infra/local && terraform $(cmd) $(cmd_args)
-
-## NOTE: this is broken, need to use custom docker image to have docker cli available inside image hashicorp/terraform for local-exec provisioners
-# _tf_infra_cli:
-# 	if [ -z $(cmd) ]; then echo "cmd not set! (e.g. make _tf_infra_cli cmd=[cmd] infra_env=[infra_env])"; exit 1; fi
-# 	if [ -z $(infra_env) ]; then echo "infra_env not set! (e.g. make _tf_infra_cli cmd=[cmd] infra_env=[infra_env])"; exit 1; fi
-# 	docker run --rm \
-# 	-v /var/run/docker.sock:/var/run/docker.sock \
-# 	-v ${PWD}/infra:/workspace/infra \
-# 	-v ${PWD}/services:/workspace/services \
-# 	-w /workspace/infra/$(infra_env) hashicorp/terraform:${TERRAFORM_VERSION} $(cmd) $(cmd_args)
