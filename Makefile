@@ -20,7 +20,6 @@ init: deps ### Init environment
 clean: tclean ### Cleans PNPM workspace (rm node_modules|dist), kills node processes, stop+rm docker containers
 	pnpm run clean:workspaces
 	killall -s KILL node ; true
-	make _tf_infra_cli cmd=destroy cmd_args="-auto-approve" infra_env=local
 	
 	
 .PHONY: dclean
@@ -31,7 +30,6 @@ dclean: ### Stop and remove docker containers and prune networks
 
 .PHONY: tclean
 tclean: ### Stop and remove local infra terraform state
-	make _tf_infra_cli cmd=destroy cmd_args="-auto-approve" infra_env=local
 	#rm -rf infra/local/terraform.tfstate infra/local/.terraform infra/local/.terraform.lock.hcl infra/local/terraform.tfstate.backup
 
 
@@ -92,9 +90,6 @@ help: ### Help with commands
 _check:
 	pnpm turbo build lint type-check
 	
-
-	make _tf_infra_cli cmd=validate infra_env=local
-	make _tf_infra_cli cmd=validate infra_env=remote
 
 	## smoketests: check if services are running before e2e tests
 	CHECK_RESPONSE__URL="${NEXT_PUBLIC_SITE_URL}" \
