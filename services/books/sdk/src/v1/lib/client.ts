@@ -54,6 +54,10 @@ export class BookSearchApiClient_V1
       }),
     );
 
+    if (!response?.length) {
+      return [];
+    }
+
     return response;
   }
 }
