@@ -42,5 +42,14 @@ jobs:
       - name: Check Build
         run: pnpm run build
 
+      - name: Run apps in background
+        run: pnpm run start & sleep 20s && kill $!
+
+      - name: Check web server is running
+        run: |
+          CHECK_RESPONSE__URL="http://localhost:3000/" \
+          CHECK_RESPONSE__EXPECT_STATUS_CODE="200" \
+          bash ./util/check_response_wait_code.sh
+
       - name: Unit tests
         run: pnpm run test:unit:ci
